@@ -51,6 +51,7 @@ namespace NLayer.API.Controllers
         public async Task<IActionResult> Save(ProductDto productDto)
         {
             var product = await _service.AddAsync(_mapper.Map<Product>(productDto));
+            product.CreatedDate = DateTime.Now;
             var productsDto = _mapper.Map<ProductDto>(product);
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(201, productsDto));
         }
@@ -60,6 +61,7 @@ namespace NLayer.API.Controllers
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
         {
+
             await _service.UpdateAsync(_mapper.Map<Product>(productUpdateDto));
             return CreateActionResult(CustomResponseDto<NoContent>.Success(204));
         }
