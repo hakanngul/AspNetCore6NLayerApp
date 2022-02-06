@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.API", "NLayer.API\NL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Caching", "NLayer.Caching\NLayer.Caching.csproj", "{E0CB9983-2F6E-4C15-AF6E-7139CDEAAB02}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayer.Web", "..\AspNetNLayerApp\NLayer.Web\NLayer.Web.csproj", "{4347EC5A-8C0B-47DB-AE3D-06AB57FADC58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E0CB9983-2F6E-4C15-AF6E-7139CDEAAB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0CB9983-2F6E-4C15-AF6E-7139CDEAAB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0CB9983-2F6E-4C15-AF6E-7139CDEAAB02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4347EC5A-8C0B-47DB-AE3D-06AB57FADC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4347EC5A-8C0B-47DB-AE3D-06AB57FADC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4347EC5A-8C0B-47DB-AE3D-06AB57FADC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4347EC5A-8C0B-47DB-AE3D-06AB57FADC58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

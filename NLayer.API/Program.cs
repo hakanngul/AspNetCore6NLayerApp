@@ -24,10 +24,9 @@ builder.Services.AddMemoryCache();
 
 
 // AutoMapper kütüphanemizi Maplediðimiz clasý uygulama düzeyinde iþletmek için ekliyoruz.
-builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
-
+builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
     x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
