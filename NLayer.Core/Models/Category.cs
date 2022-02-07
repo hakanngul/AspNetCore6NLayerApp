@@ -1,5 +1,7 @@
 ﻿
 
+using System.Collections.Generic;
+
 namespace NLayer.Core.Models
 
 {

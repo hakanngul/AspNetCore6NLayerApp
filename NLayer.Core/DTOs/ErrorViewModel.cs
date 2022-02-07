@@ -1,6 +1,9 @@
-﻿namespace NLayer.Core.DTOs;
+﻿using System.Collections.Generic;
 
-public class ErrorViewModel
+namespace NLayer.Core.DTOs
 {
-    public List<string> Errors { get; set; } = new List<string>();
+    public class ErrorViewModel
+    {
+        public List<string> Errors { get; set; } = new List<string>();
+    }
 }

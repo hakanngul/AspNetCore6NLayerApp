@@ -1,4 +1,5 @@
-﻿using NLayer.Core.Models;
+﻿using System.Threading.Tasks;
+using NLayer.Core.Models;
 
 namespace NLayer.Core.Repository
 {

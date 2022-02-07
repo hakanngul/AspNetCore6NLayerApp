@@ -1,4 +1,6 @@
-﻿namespace NLayer.Core.DTOs
+﻿using System.Collections.Generic;
+
+namespace NLayer.Core.DTOs
 {
     public class CategoryWithProductsDto : CategoryDto
     {

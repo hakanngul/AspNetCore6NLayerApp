@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
 using NLayer.Core.Models;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace NLayer.Repository
 {
@@ -11,7 +14,9 @@ namespace NLayer.Repository
         }
 
         public DbSet<Category> Categories { get; set; }
+
         public DbSet<Product> Products { get; set; }
+
         public DbSet<ProductFeature> ProductFeatures { get; set; }
 
         public override int SaveChanges()
@@ -23,15 +28,15 @@ namespace NLayer.Repository
                     switch (item.Entity)
                     {
                         case EntityState.Added:
-                            {
-                                entityReference.CreatedDate = DateTime.Now;
-                                break;
-                            }
+                        {
+                            entityReference.CreatedDate = DateTime.Now;
+                            break;
+                        }
                         case EntityState.Modified:
-                            {
-                                entityReference.UpdatedDate = DateTime.Now;
-                                break;
-                            }
+                        {
+                            entityReference.UpdatedDate = DateTime.Now;
+                            break;
+                        }
                     }
                 }
             }
@@ -49,23 +54,23 @@ namespace NLayer.Repository
                     switch (item.State)
                     {
                         case EntityState.Added:
-                            {
-                                entityReference.CreatedDate = DateTime.Now;
-                                break;
-                            }
+                        {
+                            entityReference.CreatedDate = DateTime.Now;
+                            break;
+                        }
                         case EntityState.Modified:
-                            {
-                                Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
+                        {
+                            Entry(entityReference).Property(x => x.CreatedDate).IsModified = false;
 
-                                entityReference.UpdatedDate = DateTime.Now;
-                                break;
-                            }
+                            entityReference.UpdatedDate = DateTime.Now;
+                            break;
+                        }
                     }
                 }
             }
+
             return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
         }
-
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -74,13 +79,13 @@ namespace NLayer.Repository
 
 
             modelBuilder.Entity<ProductFeature>().HasData(new ProductFeature()
-            {
-                Id = 1,
-                Color = "Kırmızı",
-                Height = 100,
-                Width = 200,
-                ProductId = 1
-            },
+                {
+                    Id = 1,
+                    Color = "Kırmızı",
+                    Height = 100,
+                    Width = 200,
+                    ProductId = 1
+                },
                 new ProductFeature()
                 {
                     Id = 2,

@@ -1,4 +1,6 @@
-﻿namespace NLayer.Core.UnitOfWorks
+﻿using System.Threading.Tasks;
+
+namespace NLayer.Core.UnitOfWorks
 {
     public interface IUnitOfWork
     {

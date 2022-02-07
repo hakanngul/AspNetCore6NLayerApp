@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
 using NLayer.Core.DTOs;
 using NLayer.Core.Models;
 using NLayer.Core.Repository;
