@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\AspNetCore6NLayerApp\NLayer.Service\NLayer.Service.csproj" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\NLayer.Service\NLayer.Service.csproj" />
   </ItemGroup>
 
 </Project>

@@ -33,7 +33,7 @@ namespace NLayer.Caching
             }
         }
 
-        public async Task<bool> Any(Expression<Func<Product, bool>> expression)
+        public Task<bool> Any(Expression<Func<Product, bool>> expression)
         {
             throw new NotImplementedException();
         }
