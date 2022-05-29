@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Models;
 
-namespace NLayer.Repository.Configurations
+namespace NLayer.Data.Configurations
 {
     internal class ProductConfiguration : IEntityTypeConfiguration<Product>
     {

@@ -2,7 +2,7 @@
 using NLayer.Core.Models;
 using NLayer.Core.Repository;
 
-namespace NLayer.Repository.Repositories
+namespace NLayer.Data.Repositories
 {
     public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
     {

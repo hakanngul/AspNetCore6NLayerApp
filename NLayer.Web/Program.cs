@@ -2,7 +2,7 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
-using NLayer.Repository;
+using NLayer.Data.;
 using NLayer.Service.Mapping;
 using NLayer.Service.Validations;
 using NLayer.Web;

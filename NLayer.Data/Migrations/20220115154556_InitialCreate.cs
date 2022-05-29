@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace NLayer.Repository.Migrations
+namespace NLayer.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {

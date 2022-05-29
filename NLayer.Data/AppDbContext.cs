@@ -2,7 +2,7 @@
 using NLayer.Core.Models;
 using System.Reflection;
 
-namespace NLayer.Repository
+namespace NLayer.Data.
 {
     public class AppDbContext : DbContext
     {

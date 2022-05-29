@@ -2,7 +2,7 @@
 using NLayer.Core.Repository;
 using System.Linq.Expressions;
 
-namespace NLayer.Repository.Repositories
+namespace NLayer.Data.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

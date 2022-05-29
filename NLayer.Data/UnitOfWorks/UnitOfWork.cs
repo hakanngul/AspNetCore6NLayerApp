@@ -1,6 +1,6 @@
 ﻿using NLayer.Core.UnitOfWorks;
 
-namespace NLayer.Repository.UnitOfWorks
+namespace NLayer.Data.UnitOfWorks
 {
     public class UnitOfWork : IUnitOfWork
     {

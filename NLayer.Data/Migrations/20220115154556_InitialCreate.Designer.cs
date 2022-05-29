@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NLayer.Repository;
+using NLayer.Data.;
 
 #nullable disable
 
-namespace NLayer.Repository.Migrations
+namespace NLayer.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20220115154556_InitialCreate")]

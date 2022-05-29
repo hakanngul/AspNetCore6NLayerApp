@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NLayer.Core.Models;
 
-namespace NLayer.Repository.Seeds
+namespace NLayer.Data.Seeds
 {
     internal class ProductSeed : IEntityTypeConfiguration<Product>
     {
